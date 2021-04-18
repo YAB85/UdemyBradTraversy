@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
-:root {
-  --success-color:#2ecc71;
-  --error-color:#e74c3c;
-}
-
 *{
   box-sizing: border-box;
 }
