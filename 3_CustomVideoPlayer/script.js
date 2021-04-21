@@ -12,6 +12,7 @@ function toggleVideoStatus() {
   } else {
     video.pause();
   }
+  return;
 }
 
 //Update play & pause icon
@@ -33,8 +34,7 @@ let shouldUpdateProgress = true;
 function updateProgress() {
   if (!shouldUpdateProgress) {
     return;
-  }
-  progress.value = (video.currentTime / video.duration) * 100;
+  } else progress.value = (video.currentTime / video.duration) * 100;
 
   //Get minutes
   let mins = Math.floor(video.currentTime / 60);
@@ -79,3 +79,5 @@ progress.addEventListener('change', setVideoProgress);
 progress.addEventListener('input', () => {
   shouldUpdateProgress = false;
 });
+
+/* Consolas, 'Courier New', monospace */
